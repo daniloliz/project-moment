@@ -1,0 +1,27 @@
+{
+  "name": "project-moment",
+  "version": "0.0.1-dev0",
+  "description": "Exemplo Moment.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniloliz/project-moment.git"
+  },
+  "keywords": [
+    "moment",
+    "angular"
+  ],
+  "author": "Danilo Raulino de Liz <danilo.rdliz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniloliz/project-moment/issues"
+  },
+  "homepage": "https://github.com/daniloliz/project-moment#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "karma": "^0.13.22"
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" />
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/moment/locale/pt-br.js"></script>
+    <script src="bower_components/moment/locale/en-gb.js"></script>
+    <script src="bower_components/moment/locale/pt.js"></script>
+    <script src="bower_components/moment-timezone/moment-timezone.js"></script>
+    <script src="bower_components/moment-timezone/moment-timezone-utils.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/componente/componente-controller.js"></script>
+    <script src="app/filtros/format-date-example.js"></script>
+
+    <meta charset="utf-8">
+    <title>Exemplos Moment.js</title>
+  </head>
+  <body>
+    <h1>Tabela de Datas Convertidas - Format Dates</h1>
+    <div ng-controller="ComponenteCtrl as comp">
+      <table>
+        <th style="border:solid 1px">
+          US - Global
+        </th>
+        <tr>
+          <td style="border:solid 1px">
+            Data formatada: dddd
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataFormatada}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Data relativa: endOf('day').fromNow()
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataRelativa}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Calendar Time: 10 days a go
+          </td>
+          <td style="border:solid 1px">
+            {{comp.calendarTime}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Format Locale: 00:00:00 AM/PM
+          </td>
+          <td style="border:solid 1px">
+            {{comp.formatLocale}}
+          </td>
+        </tr>
+        <th style="border:solid 1px">
+          PT - BR
+        </th>
+        <tr>
+          <td style="border:solid 1px">
+            Data formatada: dddd
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataFormatadaBR}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Data relativa: endOf('day').fromNow()
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataRelativaBR}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Calendar Time: 10 days a go
+          </td>
+          <td style="border:solid 1px">
+            {{comp.calendarTimeBR}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Format Locale: 00:00:00 AM/PM
+          </td>
+          <td style="border:solid 1px">
+            {{comp.formatLocaleBR}}
+          </td>
+        </tr>
+        <th style="border:solid 1px">
+          PT - Lisboa
+        </th>
+        <tr>
+          <td style="border:solid 1px">
+            Data formatada: dddd
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataFormatadaES}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Data relativa: endOf('day').fromNow()
+          </td>
+          <td style="border:solid 1px">
+            {{comp.dataRelativaES}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Calendar Time: 10 days a go
+          </td>
+          <td style="border:solid 1px">
+            {{comp.calendarTimeES}}
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 1px">
+            Format Locale: 00:00:00 AM/PM
+          </td>
+          <td style="border:solid 1px">
+            {{comp.formatLocaleES}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
